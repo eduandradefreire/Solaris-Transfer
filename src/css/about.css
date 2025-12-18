@@ -1,0 +1,71 @@
+#about {
+    min-height: calc(100vh - 91px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+#about_chef {
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    
+}
+
+#about .section-subtitle {
+    font-size: 1.4rem;
+    padding: 1rem 0;
+}
+
+#about_content {
+    width: 50%;
+    padding-top: 65px;
+}
+
+.section-title {
+    color: #e9a209;
+    font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+
+    #about {
+        flex-direction: column;
+        min-height: auto;
+        gap: 24px;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    #about_content {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    #about .section-subtitle {
+        font-size: 1rem;       /* 🔹 menor no celular */
+        line-height: 1.5;
+    }
+
+    #about_chef {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+     #about_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about_content .btn,
+    #about_content button,
+    #about_content a {
+        margin-top: 1rem;
+    }
+}
